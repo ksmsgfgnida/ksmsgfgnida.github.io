@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Билеты</title>
-    <link rel="stylesheet" href="css_bilet.css">
+    <link rel="stylesheet" href="style_bilet.css">
 </head>
 <body>
-    <div style="position: fixed; margin-top: -61px; width: 100%; ">
         <div class="header">
             <div class="logo">
                 <a class="navbar-brand" href="index.html">
@@ -43,14 +42,14 @@
                                     <a href="bilet.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center;"><p style="margin-left: 2%;">Билеты</p></div></a>
                                     <a href="repertuar.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center;"><p style="margin-left: 2%;">Репертуар<p></div></a>
                                 </div>
-                                <a href="##back.html" style ="text-decoration: none; width: 20%;"><div style="border: 1px solid #000; height: 100%; display:flex;align-items:center; justify-content: center; text-align: center;"><p>Возврат <br> билетов</p></div></a>
+                                <a href="vosvrat.html" style ="text-decoration: none; width: 20%;"><div style="border: 1px solid #000; height: 100%; display:flex;align-items:center; justify-content: center; text-align: center;"><p>Возврат <br> билетов</p></div></a>
                             </div>
                             <div style="display: flex; width: 100%; height: 34%;">
                                 <div style="width:80%;">
                                     <a href="collectiv.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center; "><p style="margin-left: 2%;">О театре</p></div></a>
                                     <a href="contact.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center;"><p style="margin-left: 2%;">Контакты</p></div></a>
                                 </div>
-                                <a href="##pa.html" style ="text-decoration: none; width: 20%;"><div style="border: 1px solid #000; height: 100%; display:flex;align-items:center; justify-content: center;"><p>Парнёры</p></div></a>
+                                <a href="parthner.html" style ="text-decoration: none; width: 20%;"><div style="border: 1px solid #000; height: 100%; display:flex;align-items:center; justify-content: center;"><p>Парнёры</p></div></a>
                             </div>
                             <a href="##doc.html" style ="text-decoration: none; width: 100%; height: 16.5%;"><div style="border: 1px solid #000;height: 100%;display:flex;align-items:center; justify-content: center;"><p>Документация</p></div></a>
                         </div>
@@ -58,78 +57,82 @@
                     </div>
                     <!-- Конец кода модального окна меню -->
                     <div class="navbar-nav1">
-                        <a class="nav-link" id="myBtn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Меню</a>
+                        <a class="nav-link" id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Меню</a>
                     </div>
                 </div>
             </nav>
         </div>
+    </div>
+
+        <div class="telo" style="position: relative;">
+            <img src="Upscales.ai_1702334624913.jpeg" alt="" style="width: 100vw;">
+            <h20 style="position: absolute; top: 12vw; left: 31vw;">Билеты</h20>
         </div>
 
-    <div class="telo">
-
-    </div>
         <!-- календарь -->
     <div class="calendar">
-        <div class="sob">
-            <h2>Верхушка календаря</h2>  
+        <div class="sob" style="display: flex; justify-content: space-around;">
+            <h2 style="color:white">Январь</h2>
+            <h2 style="color:white">Февраль</h2>
+            <h2 style="color:white">Март</h2>
+            <h2 style="color:white">Апрель</h2>
+            <h2 style="color:white">Май</h2>
+            <h2 style="color:white">Июнь</h2>
+            <h2 style="color:white">Июль</h2>
+            <h2 style="color:white">Август</h2>
+            <h2 style="color:orange">Сентябрь</h2>
+            <h2 style="color:white">Октябрь</h2> 
+            <h2 style="color:white">Ноябрь</h2>
+            <h2 style="color:white">Декабрь</h2>
         </div>
         <div class="calen_weeks">
             <div class="mondey"></div>
             <div class="thetheday"></div>
             <div class="sreda"></div>
             <div class="chetverg"></div>
-            <div class="friday"></div>
-            <div class="subb"></div>
-            <div class="vosk"></div>
+            <div class="friday"><p1>1</p1><p2>пт</p2></div>
+            <div class="subb"><p1>2</p1><p2>сб</p2></div>
+            <div class="vosk"><p1>3</p1><p2>вс</p2></div>
         </div>
         <div class="calen_weeks">
-            <div class="mondey"></div>
-            <div class="thetheday"></div>
-            <div class="sreda"></div>
-            <div class="chetverg"></div>
-            <div class="friday"></div>
-            <div class="subb"></div>
-            <div class="vosk"></div>
+            <div class="mondey"><p1>4</p1><p2>пн</p2></div>
+            <div class="thetheday"><p1>5</p1><p2>вт</p2></div>
+            <div class="sreda"><p1>6</p1><p2>ср</p2></div>
+            <div class="chetverg"><p1>7</p1><p2>чт</p2></div>
+            <div class="friday"><p1>8</p1><p2>пт</p2><img src="спектакль 2.png"><button id="ot">Купить билет</button></div>
+            <div class="subb"><p1>9</p1><p2>сб</p2><img src="каренина 3.png" ><button>Купить билет</button></div>
+            <div class="vosk"><p1>10</p1><p2>вс</p2><img src="гамлет 2.png"><button>Купить билет</button></div>
         </div>
         <div class="calen_weeks">
-            <div class="mondey"></div>
-            <div class="thetheday"></div>
-            <div class="sreda"></div>
-            <div class="chetverg"></div>
-            <div class="friday"></div>
-            <div class="subb"></div>
-            <div class="vosk"></div>
+            <div class="mondey"><p1>11</p1><p2>пн</p2></div>
+            <div class="thetheday"><p1>12</p1><p2>вт</p2></div>
+            <div class="sreda"><p1>13</p1><p2>ср</p2><img src="Rectangle 46.png"><button>Купить билет</button></div>
+            <div class="chetverg"><p1>14</p1><p2>чт</p2><img src="спектакль 2.png"><button>Купить билет</button></div>
+            <div class="friday"><p1>15</p1><p2>пт</p2></div>
+            <div class="subb"><p1>16</p1><p2>сб</p2></div>
+            <div class="vosk"><p1>17</p1><p2>вс</p2></div>
         </div>
         <div class="calen_weeks">
-            <div class="mondey"></div>
-            <div class="thetheday"></div>
-            <div class="sreda"></div>
-            <div class="chetverg"></div>
-            <div class="friday"></div>
-            <div class="subb"></div>
-            <div class="vosk"></div>
+            <div class="mondey"><p1>18</p1><p2>пн</p2></div>
+            <div class="thetheday"><p1>19</p1><p2>вт</p2></div>
+            <div class="sreda"><p1>20</p1><p2>ср</p2><img src="каренина 3.png"><button>Купить билет</button></div>
+            <div class="chetverg"><p1>21</p1><p2>чт</p2></div>
+            <div class="friday"><p1>22</p1><p2>пт</p2></div>
+            <div class="subb"><p1>23</p1><p2>сб</p2><img src="ангельчик 2.png"><button>Купить билет</button></div>
+            <div class="vosk"><p1>24</p1><p2>вс</p2></div>
         </div>
         <div class="calen_weeks">
-            <div class="mondey"></div>
-            <div class="thetheday"></div>
-            <div class="sreda"></div>
-            <div class="chetverg"></div>
-            <div class="friday"></div>
-            <div class="subb"></div>
+            <div class="mondey"><p1>25</p1><p2>пн</p2><img src="гамлет 2.png"><button>Купить билет</button></div>
+            <div class="thetheday"><p1>26</p1><p2>вт</p2></div>
+            <div class="sreda"><p1>27</p1><p2>ср</p2></div>
+            <div class="chetverg"><p1>28</p1><p2>чт</p2></div>
+            <div class="friday"><p1>29</p1><p2>пт</p2></div>
+            <div class="subb"><p1>30</p1><p2>сб</p2></div>
             <div class="vosk"></div>
         </div>
         
     </div>
 
-
-
-
-
-
-
-
-
-    
 
     <div class="footer_up">
         <div class="logo_2">
@@ -152,6 +155,34 @@
     </div>
     <button class="arrow-button" onclick="scrollToTop()" style="position: fixed; bottom: 2vw; right: 1vw;">&#8679;</button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <div id="myModal1" class="modal">
+
+        <!-- Модальное содержание -->
+            <div class="modal-content">
+                <div style="display: flex; width: 100%; height: 16.5%;">
+                    <a href="index.html" style ="text-decoration: none; width: 80%;"><div style="border: 1px solid #000; width:100%; height: 100%; display:flex;align-items:center;"><p style="margin-left: 2%;">Мама</p></div></a>
+                    <span class="close1" style="border: 1px solid #000;" style ="text-decoration: none;"><p>Закрыть</p></span>
+                </div>
+                <div style="display: flex; width: 100%; height: 34%;">
+                    <div style="width:80%;">
+                        <a href="bilet.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center;"><p style="margin-left: 2%;">Билеты</p></div></a>
+                        <a href="repertuar.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center;"><p style="margin-left: 2%;">Репертуар<p></div></a>
+                    </div>
+                    <a href="vosvrat.html" style ="text-decoration: none; width: 20%;"><div style="border: 1px solid #000; height: 100%; display:flex;align-items:center; justify-content: center; text-align: center;"><p>Возврат <br> билетов</p></div></a>
+                </div>
+                <div style="display: flex; width: 100%; height: 34%;">
+                    <div style="width:80%;">
+                        <a href="collectiv.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center; "><p style="margin-left: 2%;">О театре</p></div></a>
+                        <a href="contact.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center;"><p style="margin-left: 2%;">Контакты</p></div></a>
+                    </div>
+                    <a href="parthner.html" style ="text-decoration: none; width: 20%;"><div style="border: 1px solid #000; height: 100%; display:flex;align-items:center; justify-content: center;"><p>Парнёры</p></div></a>
+                </div>
+                <a href="##doc.html" style ="text-decoration: none; width: 100%; height: 16.5%;"><div style="border: 1px solid #000;height: 100%;display:flex;align-items:center; justify-content: center;"><p>Документация</p></div></a>
+            </div>
+
+        </div>
 
 
     <script>
@@ -178,7 +209,7 @@
         var btn = document.getElementById("myBtn");
     
         // Получить элемент <span>, который закрывает модальный
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.getElementsByClassName("close1")[0];
     
         // Когда пользователь нажимает на кнопку, откройте модальный
         btn.onclick = function() {
@@ -197,5 +228,35 @@
         }
         }     
     </script>
+
+
+
+<script>
+    // Получить модальный
+    var modal = document.getElementById("myModal1");
+
+    // Получить кнопку, которая открывает модальный
+    var btn = document.getElementById("ot");
+
+    // Получить элемент <span>, который закрывает модальный
+    var span = document.getElementsByClassName("close")[0];
+
+    // Когда пользователь нажимает на кнопку, откройте модальный
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+        // Когда пользователь нажимает на <span> (x), закройте модальное окно
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }     
+</script>
 </body>
 </html>

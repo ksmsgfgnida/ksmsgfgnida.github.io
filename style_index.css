@@ -100,16 +100,16 @@ em{
 
 p1{
     color: #000;
-    font-family: Playfair Display SC;
-    font-size: 3vw; /* 2% of the viewport width */
+    font-family: 'Nokora', sans-serif;
+    font-size: 1.5vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
     z-index: 100;
     position: relative;
     bottom:-3%;
     left: 1%;
+
 }
 
 p2{
