@@ -1,10 +1,13 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nokora&family=Unna&display=swap');
 
 body{
     background-color: #F2F2ED;
     margin: 0;
 
+
 }
+
 .header{
     align-content: center;
     justify-content: space-around;
@@ -19,43 +22,88 @@ body{
     text-transform: uppercase;
     border: 1px solid #000;
     background-color: #F2F2ED;
-    z-index: 1000;
-    position: fixed;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
     margin-top: -4%;
+    
 }
+
 h{
     color: #000;
+    font-family: Playfair Display SC;
+    font-size: 4vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 100;
+}
+
+h20{
+    color: #FFFF;
     font-family: Playfair Display SC;
     font-size: 9vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    position: relative;
+    z-index: 100;
 }
+
+p2{
+    font-family: 'Abril Fatface', serif;
+    font-style: normal;
+    font-size: 1.2vw;
+    color: rgba(0, 0, 0, 0.37);
+    position: relative;
+    top:1.5vw;
+}
+
+p3{
+    font-family: 'Nokora', sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+    color: #000;
+    position: relative;
+    top:5vw;
+}
+
 h1{
-    color: white;
+    color: #FFFF;
     font-family: Playfair Display SC;
     font-size: 1.3vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    position: relative;
+    z-index: 100;
 }
+
+
+.hidden {
+    display: none;
+  }
 
 h2{
     color: #000;
-    font-family: Nokora;
+    font-family: Playfair Display SC;
     font-size: 2vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    position: relative;
+    top:3vw;
 }
+
 p{
     color: #000;
     font-family: Playfair Display SC;
-    font-size: 2.3vw; /* 2% of the viewport width */
+    font-size: 2.7vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -72,100 +120,56 @@ h3{
     text-transform: uppercase;
 }
 
+.bood{
+    justify-self: left;
+    width: 79.9vw;
+    height: 23vw; /* 30% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+}
+.cl{
+    width: 18.98vw;
+    height: 23vw; /* 30% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    justify-content: center;
+    display: flex;
+}
+
+.telo{
+    display: flex;
+    margin-top: 3.5vw;
+    width: 100%;
+    height: 50vw;
+    background-color: #F2F2ED;
+    overflow: hidden; /* обрезать лишнюю часть изображения */
+}
+
+.telo img{
+    width: 100%;
+    height: 150%; /* автоматически подстраивать высоту изображения */
+    position: relative;
+    top:-20%;
+    z-index: 1;
+}
+
+
 .telo2{
     justify-content: left;
     align-self: center;
     display: flex;
-    height: 48vw;
+}
+
+
+
+
+.podsob{
     width: 100%;
-}
-
-.slii{
-    width: 98.9vw;
-    height: 32.3vw; /* 70% of the viewport height */
     flex-shrink: 0;
-    z-index: 1;
-    margin-top: 3.5vw;
-}
-  
-
-.block1{
-    width: 20vw;
-    height: 48vw; /* 50% of the viewport height */
-    flex-shrink: 0;
-    border: 1px solid #000;
-    align-items: center;
+    background: #F2F2ED;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.block3{
-    width: 23vw;
-    height: 48vw; /* 50% of the viewport height */
-    flex-shrink: 0;
-    border: 1px solid #000;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: column;
-}
-
-
-.block1:hover .foto{
-    background-color: #FFC224;
-}
-
-.block1 img{
-    width: 13vw;
-
-}
-
-.block3 img{
-    width: 23vw;
-    margin-left: 20%;
-    margin-bottom: 7vw;
-}
-
-
-.block2{
-    width: 55.9vw;
-    height: 48vw; /* 50% of the viewport height */
-    flex-shrink: 0;
-    border: 1px solid #000;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    overflow-y: auto; /* добавляем вертикальную прокрутку */
-}
-
-
-.ras1,
-.ras2,
-.ras3{
-    width: 100%;
-    height:15.96vw;
-    border: 1px solid #000;
-    overflow: hidden;
-    background-color: black; /* делаем задний фон черным, чтобы изображения были невидимы */
-    border-bottom:1px solid rgba(155, 149, 149, 0.73);
-}
-
-.ras1:hover,
-.ras2:hover,
-.ras3:hover {
-    background-color: transparent; /* при наведении делаем задний фон прозрачным, чтобы показать изображение */
-}
-
-.ras1 img,
-.ras2 img,
-.ras3 img {
-    opacity: 0; /* при наведении делаем изображение полностью прозрачным */
-}
-
-.ras1:hover img,
-.ras2:hover img,
-.ras3:hover img {
-    opacity: 1;
+    
 }
 
 .nav-link{
@@ -185,7 +189,7 @@ h3{
     line-height: normal;
     text-transform: uppercase;
     justify-content: center; /* Логотип будет выравниваться слева */
-    margin-bottom: 1.5vw;
+    margin-bottom: 1.5vw
 }
 
 .navbar-brand img {
@@ -234,7 +238,6 @@ h3{
     width: 100%; /* 100% of the parent container's width */
     display: flex;
     justify-content: space-between;
-    top: 0;
   }
   
   .navbar-nav {
@@ -260,6 +263,30 @@ h3{
 .ic{
     width: 1vw;
     height: 1vw;
+}
+
+.text{
+    margin-top: 6vw;
+}
+
+.sob{
+    width: 98.9vw;
+    height: 5vw; /* 50% of the viewport height */
+    border: 1px solid #000;
+    background: #F2F2ED;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page{
+    width: 98.9vw;
+    height: 5vw; /* 50% of the viewport height */
+    border: 1px solid #000;
+    background: #F2F2ED;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer_up{
@@ -350,9 +377,103 @@ h8{
     margin-left: 3%;
 }
 
+.vetka{
+    
+    display: flex;
+    height: 5vw;
+    background-color: #F2F2ED;
+    border: 1px solid #000;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.vetka2{
+    display: flex;
+    height: 5vw;
+    background-color: #F2F2ED;
+    border: 1px solid #000;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.ticet{
+    margin-bottom: 12%;
+    width: 15%;
+    height: 4vw;
+    margin-left: 80%;
+    background-color: #F0D92A;
+}
+
 
 .carousel-indicators{
     margin-bottom: 6%;
+}
+
+.linkk{
+    text-decoration: none;
+}
+
+.podsob img{
+    width: 10vw;
+    border-radius: 40% 40% 0 0;
+}
+
+.sp1,
+.sp2,
+.sp3{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    width: 32.97vw;
+    height: 32.97vw;
+    text-align: center;
+}
+
+
+.sp1:hover .spec,
+.sp2:hover .spec,
+.sp3:hover .spec{
+    background-color: #F0D92A;
+}
+
+
+
+.foto{
+    width: 15vw;
+    height: 15vw;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+h12{
+    color: #000;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.spec{
+    width: 12vw;
+    height: 17vw;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40% 40% 0 0;
+    background-color: #F2F2ED;
+    position: relative;
+    top:2.7vw;
 }
 
 /* Модальный (фон) */
@@ -393,7 +514,7 @@ h8{
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: #F0D92A;
     text-decoration: none;
     cursor: pointer;
   }

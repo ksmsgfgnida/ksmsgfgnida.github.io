@@ -27,14 +27,14 @@ body{
 h{
     color: #000;
     font-family: Playfair Display SC;
-    font-size: 3vw; /* 2% of the viewport width */
+    font-size: 9vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
 }
 h1{
-    color: #000;
+    color: white;
     font-family: Playfair Display SC;
     font-size: 1.3vw; /* 2% of the viewport width */
     font-style: normal;
