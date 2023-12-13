@@ -8,6 +8,17 @@ body{
 
 }
 
+#ticket-cancellation {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#ticketCancellationForm {
+    border-radius: 8px;
+}
+
 .header{
     align-content: center;
     justify-content: space-around;

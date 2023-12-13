@@ -1,6 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nokora&family=Unna&display=swap');
 
 
+@media (max-width: 768px) {
+    .calen_weeks {
+        flex-wrap:wrap; /* Показываем по три элемента в ширину */
+    }
+
+    .mondey,
+    .thetheday,
+    .sreda,
+    .chetverg,
+    .friday,
+    .subb,
+    .vosk {
+        width: 33.33%;
+        height: 20vh;
+        border: 1px solid #000;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+  
+    .mondey img,
+    .thetheday img,
+    .sreda img,
+    .chetverg img,
+    .friday img,
+    .subb img,
+    .vosk img {
+      bottom: 90px; /* фиксированное смещение для мобильных устройств */
+    }
+  
+    .friday button,
+    .mondey button,
+    .sreda button,
+    .chetverg button,
+    .subb button,
+    .vosk button {
+      font-size: 1vw; /* фиксированный размер шрифта для мобильных устройств */
+      padding: 10px 5px; /* фиксированный отступ для мобильных устройств */
+      bottom: 25px;
+      white-space:now-rap;
+       /* фиксированное смещение для мобильных устройств */
+    }
+}
+
 body{
     background-color: #F2F2ED;
     margin: 0;
@@ -32,7 +77,6 @@ body{
     position: fixed;
     z-index: 1000;
     margin-top: -4%;
-
     
 }
 
@@ -209,9 +253,8 @@ a:hover h2{
 }
 
 .calen_weeks{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 
@@ -223,7 +266,7 @@ a:hover h2{
 .friday,
 .subb,
 .vosk{
-    width: 14.28%;
+    width: 33.33%;
     height: 13vw;
     border: 1px solid #000;
     overflow: hidden;
@@ -254,25 +297,24 @@ a:hover h2{
     color: #F0D92A;
 }
 
-.logo {
+.logo{
     display: flex;
     align-items: center;
-    width: 30%; /* Ширина занимает всю доступную ширину */
-    height: 150%;
+    width: 360px;
+    height: 73px;
     color: #000;
     line-height: normal;
     text-transform: uppercase;
-    justify-content: center; /* Логотип будет выравниваться по центру */
+    justify-content: center; /* Логотип будет выравниваться слева */
     margin-bottom: 1.5vw;
-  }
+}
 
-  .navbar-brand img {
+.navbar-brand img {
     position: relative;
-    max-width: 13vw; /* Максимальная ширина логотипа */
-    top: 0.2vw;
-    flex-shrink: 0;
-    
-  }
+    width: 13vw; /* Логотип будет уменьшаться при уменьшении родительского элемента */
+    top: 0.3vw;
+}
+
 
 .arrow-button{
     background-color: white; /* задаем белый цвет */
@@ -312,7 +354,6 @@ a:hover h2{
     width: 100%; /* 100% of the parent container's width */
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
   }
   
   .navbar-nav {
@@ -517,7 +558,7 @@ h12{
 
 
 /* Модальный (фон) */
-.modal-content1 {
+.modal-content {
     background-color: #F2F2ED;
     margin: auto; /* 15% сверху и по центру */
     border: 1px solid #888;
@@ -526,7 +567,7 @@ h12{
   }
   
   /* Кнопка закрытия */
-  .close1 {
+  .close {
     display: flex;
     width: 20%;
     height: 8vw;
@@ -540,68 +581,9 @@ h12{
   }
   
   
-  .close1:hover,
-  .close1:focus {
+  .close:hover,
+  .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-  
-
-  @media (max-width: 992px) {
-    .vetv2 {
-      margin-left: 70%; /* Показываем по семь элементов в ширину */
-    }
-}
-
-@media (min-width: 768px) {
-    .calen_weeks {
-      width: 200%; /* Показываем по семь элементов в ширину */
-    }
-}
-
-  
-@media (max-width: 768px) {
-    .calen_weeks {
-        flex-wrap:wrap; /* Показываем по три элемента в ширину */
-    }
-
-    .mondey,
-    .thetheday,
-    .sreda,
-    .chetverg,
-    .friday,
-    .subb,
-    .vosk {
-        width: 33.33%;
-        height: 15vh;
-        border: 1px solid #000;
-        overflow: hidden;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-      .mondey img,
-    .thetheday img,
-    .sreda img,
-    .chetverg img,
-    .friday img,
-    .subb img,
-    .vosk img {
-      bottom: 50px;
-      width: 40vw; /* фиксированное смещение для мобильных устройств */
-    }
-  
-    .friday button,
-    .mondey button,
-    .sreda button,
-    .chetverg button,
-    .subb button,
-    .vosk button {
-      font-size: 1vw; /* фиксированный размер шрифта для мобильных устройств */
-      padding: 10px 5px; /* фиксированный отступ для мобильных устройств */
-      bottom: 25px;
-      white-space:now-rap;
-       /* фиксированное смещение для мобильных устройств */
-    }
-}

@@ -1,3 +1,6 @@
+
+
+
 body{
     background-color: #F2F2ED;
     margin: 0;
@@ -23,7 +26,7 @@ body{
 h10{
     color: rgba(0, 0, 0, 0.50);
     font-family: Playfair Display SC;
-    font-size: 1vw; /* 2% of the viewport width */
+    font-size: 1em; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -219,7 +222,7 @@ h15{
 
 .podblock1{
     justify-self: left;
-    width: 57.9vw;
+    width: 60%;
     height: 23vw; /* 30% of the viewport height */
     flex-shrink: 0;
     border: 1px solid #000;
@@ -236,13 +239,14 @@ h15{
 }
 
 .podblock{
-    width: 41vw;
+    width: 40%;
     height: 23vw; /* 30% of the viewport height */
     flex-shrink: 0;
     border: 1px solid #000;
     background: #B8AF9E;
     flex-wrap: wrap;
     align-items: flex-start;
+    box-sizing: border-box;
 }
 
 .podblock_{
@@ -260,6 +264,7 @@ h15{
     align-self: flex-start;
     display: flex;
     margin-top: 3.5vw;
+    width: 100%;
 }
 .block2{
     justify-content: left;
@@ -794,3 +799,19 @@ h8{
     text-decoration: none;
     cursor: pointer;
   }
+
+@media (max-width: 768px) {
+    .block1 {
+      flex-direction: column;
+    }
+  
+    .podblock1, .podblock {
+      order: 1;
+      width: 100%; /* Задаем ширину на всю ширину экрана */
+      box-sizing: border-box; /* Предотвращает выход контента за пределы блока */
+    }
+  
+    .podblock1 {
+      order: 2;
+    }
+}

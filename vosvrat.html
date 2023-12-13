@@ -60,50 +60,49 @@
         </nav>
     </div>
     <!-- основа -->
-    <div class="telo" style="position: relative;">
+    <div class="telo" style="position: relative; display:column;">
         <h>Возрат билетов</h>
 
         <br><br><br><br><br>
-        <h1>Форма возврата билета</h1>
-        <form name="returnForm" onsubmit="return validateForm()">
-          <label>ФИО:</label>
-          <input type="text" name="name"><br><br>
         
-          <label>Email:</label>
-          <input type="email" name="email"><br><br>
+            <!-- Ticket Cancellation Form -->
+                        <form id="ticketCancellationForm">
+                            <div class="form-group">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="row">Row:</label>
+                                <input type="text" class="form-control" id="row" placeholder="Enter row" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="seatingLocation">Seating Location:</label>
+                                <input type="text" class="form-control" id="seatingLocation" placeholder="Enter seating location" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reason">Reason for Cancellation:</label>
+                                <textarea class="form-control" id="reason" placeholder="Enter reason for cancellation" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Cancel Ticket</button>
+                        </form>
         
-          <label>Номер телефона:</label>
-          <input type="tel" name="phoneNumber"><br><br>
+            <!-- Bootstrap & jQuery JS -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
         
-          <label>Номер банковской карты:</label>
-          <input type="text" name="cardNumber"><br><br>
-        
-          <label>Номер билета:</label>
-          <input type="text" name="ticketNumber"><br><br>
-        
-          <label>Номер ряда:</label>
-          <input type="text" name="seatRow"><br><br>
-        
-          <label>Номер места:</label>
-          <input type="text" name="seatNumber"><br><br>
-        
-          <label>Дата постановки и название:</label>
-          <input type="text" name="showDateName"><br><br>
-        
-          <label>Выбор причины:</label>
-          <select id="reason" name="reason" onchange="showOtherReason()">
-            <option value="Болезнь зрителя">В связи с болезнью зрителя</option>
-            <option value="Инициатива зрителя">По инициативе зрителя</option>
-            <option value="Другая">Другая</option>
-          </select><br><br>
-        
-          <div id="otherReason" class="hidden">
-            <label>Другая причина:</label>
-            <input type="text" name="otherReasonText"><br><br>
-          </div>
-        
-          <input type="submit" value="Отправить">
-        </form>
     </div>
     <footer>
     <div class="footer_up">
@@ -144,7 +143,14 @@
             behavior: "smooth" // добавляем плавность прокрутке
         });
     }
-    </script>
+
+        $(document).ready(function() {
+                $('#ticketCancellationForm').submit(function(e) {
+                    e.preventDefault();
+                    alert('Ticket cancellation request submitted successfully.');
+                });
+            });
+        </script>
         <script>
             // Получить модальный
             var modal = document.getElementById("myModal");
