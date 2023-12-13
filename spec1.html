@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Билеты</title>
-    <link rel="stylesheet" href="style_bilet.css">
+    <link rel="stylesheet" href="style_spec.css">
 </head>
 <body>
         <div class="header">
@@ -29,13 +29,13 @@
                     </div>
                     <div class="vetv2"></div>
                     <!-- Модальный -->
-                    <div id="myModal1" class="modal">
+                    <div id="myModal" class="modal">
 
                     <!-- Модальное содержание -->
-                        <div class="modal-content1">
+                        <div class="modal-content">
                             <div style="display: flex; width: 100%; height: 16.5%;">
                                 <a href="index.html" style ="text-decoration: none; width: 80%;"><div style="border: 1px solid #000; width:100%; height: 100%; display:flex;align-items:center;"><p style="margin-left: 2%;">Главная</p></div></a>
-                                <span class="close1" style="border: 1px solid #000;" style ="text-decoration: none;"><p>Закрыть</p></span>
+                                <span class="close" style="border: 1px solid #000;" style ="text-decoration: none;"><p>Закрыть</p></span>
                             </div>
                             <div style="display: flex; width: 100%; height: 34%;">
                                 <div style="width:80%;">
@@ -65,65 +65,45 @@
     </div>
 
         <div class="telo" style="position: relative;">
-            <img src="Upscales.ai_1702334624913.jpeg" alt="" style="width: 100vw;">
-            <h20 style="position: absolute; top: 12vw; left: 31vw;">Билеты</h20>
+            <div><img src="Upscales.ai_1702334624913.jpeg" alt="" style="width: 100vw;"></div>
+            <div><h20 style="position: absolute; top: 12vw; left: 31vw;">Билеты</h20></div>
         </div>
+    <div class="calendar">  
+    </div><section class="container mt-5" id="feedback">
+        <div class="row justify-content-center">
+         <div class="col-md-6">
+          <h2>
+           Leave Your Feedback
+          </h2>
+          <form id="feedbackForm">
+           <div class="form-group">
+            <label for="name">
+             Name:
+            </label>
+            <input class="form-control" id="name" placeholder="Enter your name" required="" type="text"/>
+           </div>
+           <div class="form-group">
+            <label for="email">
+             Email:
+            </label>
+            <input class="form-control" id="email" placeholder="Enter your email" required="" type="email"/>
+           </div>
+           <div class="form-group">
+            <label for="message">
+             Message:
+            </label>
+            <textarea class="form-control" id="message" placeholder="Enter your message" required=""></textarea>
+           </div>
+           <button class="btn btn-primary w-100" type="submit">
+            Submit Feedback
+           </button>
+          </form>
+         </div>
+        </div>
+       </section>
 
-        <!-- календарь -->
-    <div class="calendar">
-        <div class="sob" style="display: flex; justify-content: space-around;">
-            <a href="#"><h2 >Январь</h2></a>
-            <a href="#"><h2 >Февраль</h2></a>
-            <a href="#"><h2 >Март</h2></a>
-            <a href="#"><h2 >Апрель</h2></a>
-            <a href="#"><h2 >Май</h2></a>
-            <a href="#"><h2 >Июнь</h2></a>
-            <a href="#"><h2 >Июль</h2></a>
-            <a href="#"><h2 >Август</h2></a>
-            <a href="bilet.html"><h2 style="color:orange">Сентябрь</h2></a>
-            <a href="#"><h2 >Октябрь</h2></a>
-            <a href="#"><h2 >Ноябрь</h2></a>
-            <a href="#"><h2 >Декабрь</h2></a>
-        </div>
-        <div class="calen_weeks">
-            <div class="mondey"></div>
-            <div class="thetheday"></div>
-            <div class="sreda"></div>
-            <div class="chetverg"></div>
-            <div class="friday"><p1>1</p1><p2>пт</p2></div>
-            <div class="subb"><p1>2</p1><p2>сб</p2></div>
-            <div class="vosk"><p1>3</p1><p2>вс</p2></div>
-            <div class="mondey"><p1>4</p1><p2>пн</p2></div>
-            <div class="thetheday"><p1>5</p1><p2>вт</p2></div>
-            <div class="sreda"><p1>6</p1><p2>ср</p2></div>
-            <div class="chetverg"><p1>7</p1><p2>чт</p2></div>
-            <div class="friday"><p1>8</p1><p2>пт</p2><img src="спектакль 2.png"><button id="ot">Купить билет</button></div>
-            <div class="subb"><p1>9</p1><p2>сб</p2><img src="каренина 3.png" ><button>Купить билет</button></div>
-            <div class="vosk"><p1>10</p1><p2>вс</p2><img src="гамлет 2.png"><button>Купить билет</button></div>
-            <div class="mondey"><p1>11</p1><p2>пн</p2></div>
-            <div class="thetheday"><p1>12</p1><p2>вт</p2></div>
-            <div class="sreda"><p1>13</p1><p2>ср</p2><img src="Rectangle 46.png"><button>Купить билет</button></div>
-            <div class="chetverg"><p1>14</p1><p2>чт</p2><img src="спектакль 2.png"><button>Купить билет</button></div>
-            <div class="friday"><p1>15</p1><p2>пт</p2></div>
-            <div class="subb"><p1>16</p1><p2>сб</p2></div>
-            <div class="vosk"><p1>17</p1><p2>вс</p2></div>
-            <div class="mondey"><p1>18</p1><p2>пн</p2></div>
-            <div class="thetheday"><p1>19</p1><p2>вт</p2></div>
-            <div class="sreda"><p1>20</p1><p2>ср</p2><img src="каренина 3.png"><button>Купить билет</button></div>
-            <div class="chetverg"><p1>21</p1><p2>чт</p2></div>
-            <div class="friday"><p1>22</p1><p2>пт</p2></div>
-            <div class="subb"><p1>23</p1><p2>сб</p2><img src="ангельчик 2.png"><button>Купить билет</button></div>
-            <div class="vosk"><p1>24</p1><p2>вс</p2></div>
-            <div class="mondey"><p1>25</p1><p2>пн</p2><img src="гамлет 2.png"><button>Купить билет</button></div>
-            <div class="thetheday"><p1>26</p1><p2>вт</p2></div>
-            <div class="sreda"><p1>27</p1><p2>ср</p2></div>
-            <div class="chetverg"><p1>28</p1><p2>чт</p2></div>
-            <div class="friday"><p1>29</p1><p2>пт</p2></div>
-            <div class="subb"><p1>30</p1><p2>сб</p2></div>
-            <div class="vosk"></div>
-        </div>
-        
-    </div>
+  
+  
 
 
     <div class="footer_up">
@@ -147,12 +127,14 @@
     </div>
     <button class="arrow-button" onclick="scrollToTop()" style="position: fixed; bottom: 2vw; right: 1vw;">&#8679;</button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-    <div id="myModaling" class="modaling">
+    <div id="myModal1" class="modal">
 
         <!-- Модальное содержание -->
-            <div class="modal-contenting">
+            <div class="modal-content1">
                 
             </div>
 
@@ -177,7 +159,7 @@
     </script>
     <script>
         // Получить модальный
-        var modal1 = document.getElementById("myModal1");
+        var modal1 = document.getElementById("myModal");
     
         // Получить кнопку, которая открывает модальный
         var btn1 = document.getElementById("myBtn");
@@ -207,7 +189,7 @@
 
 <script>
     // Получить модальный
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("myModal1");
 
     // Получить кнопку, которая открывает модальный
     var btn = document.getElementById("ot");
@@ -232,5 +214,38 @@
     }
     }     
 </script>
+<script>
+    $(document).ready(function() {
+        $('#feedbackForm').submit(function(e) {
+            e.preventDefault()
+            if (validateForm()) {
+                alert('Thank you for your feedback!');
+                $('#feedbackForm')[0].reset();
+            }
+        });
+ 
+    function validateForm() {
+        let name = $('#name').val();
+        let email = $('#email').val();
+        let message = $('#message').val();
+ 
+        if (name.trim() === '') {
+            alert('Please enter your name.');
+            return false;
+        }
+ 
+        if (email.trim() === '') {
+            alert('Please enter your email.');
+            return false;
+        }
+ 
+        if (message.trim() === '') {
+            alert('Please enter your message.');
+            return false;
+        }
+ 
+        return true;
+    }
+});       </script>
 </body>
 </html>

@@ -138,6 +138,10 @@ h3{
     overflow-y: auto; /* добавляем вертикальную прокрутку */
 }
 
+.block2::-webkit-scrollbar{
+    width: 0;
+}
+
 
 .ras1,
 .ras2,
