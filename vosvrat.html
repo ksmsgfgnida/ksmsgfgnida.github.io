@@ -48,7 +48,7 @@
                                 </div>
                                 <a href="parthner.html" style ="text-decoration: none; width: 20%;"><div style="border: 1px solid #000; height: 100%; display:flex;align-items:center; justify-content: center;"><p>Парнёры</p></div></a>
                             </div>
-                            <a href="##doc.html" style ="text-decoration: none; width: 100%; height: 16.5%;"><div style="border: 1px solid #000;height: 100%;display:flex;align-items:center; justify-content: center;"><p>Документация</p></div></a>
+                            <a href="doc.html" style ="text-decoration: none; width: 100%; height: 16.5%;"><div style="border: 1px solid #000;height: 100%;display:flex;align-items:center; justify-content: center;"><p>Документация</p></div></a>
                         </div>
 
                     </div>
@@ -60,47 +60,60 @@
         </nav>
     </div>
     <!-- основа -->
-    <div class="telo" style="position: relative; display:column;">
-        <h>Возрат билетов</h>
-
-        <br><br><br><br><br>
-        
+    <div class="telo" style="position: relative;">
+        <div style="display: flex; justify-content: center; border: 1px solid#000;"><h>Возрат билетов</h></div>
+        <div id="form-container">
             <!-- Ticket Cancellation Form -->
-                        <form id="ticketCancellationForm">
-                            <div class="form-group">
-                                <label for="firstName">First Name:</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name:</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phoneNumber">Phone Number:</label>
-                                <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="row">Row:</label>
-                                <input type="text" class="form-control" id="row" placeholder="Enter row" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="seatingLocation">Seating Location:</label>
-                                <input type="text" class="form-control" id="seatingLocation" placeholder="Enter seating location" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="reason">Reason for Cancellation:</label>
-                                <textarea class="form-control" id="reason" placeholder="Enter reason for cancellation" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Cancel Ticket</button>
-                        </form>
-        
-            <!-- Bootstrap & jQuery JS -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <form id="myForm">
+                    <div class="left-column">
+                        <label for="fullName">ФИО</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Введите ФИО"><br><br>
+            
+                        <label for="phoneNumber">Номер телефона:</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="89[0-9]{9}" placeholder="89123456789"><br><br>
+            
+                        <label for="email">Электронная почта:</label>
+                        <input type="email" id="email" name="email" placeholder="Введите электронную почту"><br><br>
+                    
+                        <label for="play">Постановка:</label>
+                        <select id="play" name="play">
+                            <option value="">Выбирете постановку</option>
+                            <option value="451 градус по фаренгейту">451 градус по фаренгейту</option>
+                            <option value="ангельчик">Ангельчик</option>
+                            <option value="анна каренина">Анна Каренина</option>
+                            <option value="арстистка из кукушкино">Артистка из Кукушкино</option>
+                            <option value="гамлет">Гамлет</option>
+                        </select><br><br>
+                        <label for="dateTime">Дата и время:</label>
+                        <input type="datetime-local" id="dateTime" name="dateTime"><br><br>
+                    </div>
+                    <div class="right-column">
+                        <label for="location">Локация:</label>
+                        <select id="location" name="location">
+                            <option value="">Выбирете локацию</option>
+                            <option value="parter">Партер</option>
+                            <option value="balcony">Балкон</option>
+                        </select><br><br>
+            
+                        <label for="seatRow">Ряд:</label>
+                        <select id="seatRow" name="seatRow">
+                            <option value="">Выбирете ряд</option>
+                        </select><br><br>
+            
+                        <label for="seatNumber">Место посадки:</label>
+                        <select id="seatNumber" name="seatNumber">
+                            <option value="">Выбирете место</option>
+                        </select><br><br>
+                    
+                        <label for="reason">Причина возврата билета:</label>
+                        <textarea id="reason" name="reason" placeholder="Добавить комментарий"></textarea><br><br>
+            
+                        <input type="submit" value="Вернуть билет" >
+                        <p6 id="message"></p6>
+                    </div>
+                </div>
+            </form>
+        </div>
     
         
     </div>
@@ -127,7 +140,8 @@
     </footer>   
     <button class="arrow-button" onclick="scrollToTop()" style="position: fixed; bottom: 4vw; right: 1vw; z-index: 10000;">&#8679;</button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         window.addEventListener('scroll', function() {
         var button = document.querySelector('.arrow-button');
@@ -178,31 +192,98 @@
             }
             }     
         </script>
-          <script>
-            function validateForm() {
-              var name = document.forms["returnForm"]["name"].value;
-              var email = document.forms["returnForm"]["email"].value;
-              var phoneNumber = document.forms["returnForm"]["phoneNumber"].value;
-              var cardNumber = document.forms["returnForm"]["cardNumber"].value;
-              var ticketNumber = document.forms["returnForm"]["ticketNumber"].value;
-              var seatRow = document.forms["returnForm"]["seatRow"].value;
-              var seatNumber = document.forms["returnForm"]["seatNumber"].value;
-              var reason = document.forms["returnForm"]["reason"].value;
-          
-              if (name == "" || email == "" || phoneNumber == "" || cardNumber == "" || ticketNumber == "" || seatRow == "" || seatNumber == "" || reason == "") {
-                alert("Пожалуйста, заполните все поля формы.");
-                return false;
-              }
+    <script>
+            const locationSelect = document.getElementById('location');
+            const seatRowSelect = document.getElementById('seatRow');
+            const seatNumberSelect = document.getElementById('seatNumber');
+
+            // Функция для заполнения списка рядов и мест
+            function populateSeatOptions(location) {
+                // Очищаем текущие опции
+                seatRowSelect.innerHTML = '<option value="">Выбирете ряд</option>';
+                seatNumberSelect.innerHTML = '<option value="">Выбирете место</option>';
+
+                // Заполняем список рядов и мест в зависимости от выбранной локации
+                if (location === 'parter') {
+                    for (let i = 1; i <= 16; i++) {
+                        seatRowSelect.innerHTML += `<option value="${i}">Ряд ${i}</option>`;
+                    }
+                    for (let j = 1; j <= 34; j++) {
+                        seatNumberSelect.innerHTML += `<option value="${j}">Место ${j}</option>`;
+                    }
+                    seatNumberSelect.innerHTML += '<option value="A">Seat A</option>';
+                    seatNumberSelect.innerHTML += '<option value="B">Seat B</option>';
+                    seatNumberSelect.innerHTML += '<option value="C">Seat C</option>';
+                    seatNumberSelect.innerHTML += '<option value="D">Seat D</option>';
+                } else if (location === 'balcony') {
+                    for (let i = 1; i <= 7; i++) {
+                        seatRowSelect.innerHTML += `<option value="${i}">Row ${i}</option>`;
+                    }
+                    for (let j = 1; j <= 28; j++) {
+                        seatNumberSelect.innerHTML += `<option value="${j}">Seat ${j}</option>`;
+                    }
+                }
             }
-          
-            function showOtherReason() {
-              var reason = document.getElementById("reason").value;
-              if (reason == "Другая") {
-                document.getElementById("otherReason").style.display = "block";
-              } else {
-                document.getElementById("otherReason").style.display = "none";
-              }
-            }
-          </script>
+
+// Обновляем списки рядов и мест при изменении выбора локации
+            locationSelect.addEventListener('change', function() {
+                const selectedLocation = locationSelect.value;
+                populateSeatOptions(selectedLocation);
+            });
+
+            // Инициализируем списки рядов и мест при загрузке страницы
+            populateSeatOptions(locationSelect.value);
+
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Отменяем стандартное действие отправки формы
+
+                // Получаем значения полей формы
+                const fullName = document.getElementById('fullName').value;
+                const location = document.getElementById('location').value;
+                const seatRow = document.getElementById('seatRow').value;
+                const seatNumber = document.getElementById('seatNumber').value;
+
+                // Валидация полей
+                let isValid = true;
+                let errorMessage = '';
+
+                // Проверка на заполненность полей
+                if (fullName === '') {
+                    isValid = false;
+                    errorMessage += 'Please enter your full name.\n';
+                }
+                if (location === '') {
+                    isValid = false;
+                    errorMessage += 'Please select a location.\n';
+                }
+                if (seatRow === '') {
+                    isValid = false;
+                    errorMessage += 'Please select a row.\n';
+                }
+                if (seatNumber === '') {
+                    isValid = false;
+                    errorMessage += 'Please select a seat.\n';
+                }
+
+                // Показываем сообщение об ошибке или успешной отправке
+                const messageElement = document.getElementById('message');
+                if (isValid) {
+                    // Отправка формы
+                    messageElement.style.color = 'green';
+                    messageElement.textContent = 'Form submitted successfully.';
+                    // Добавьте здесь логику для отправки данных формы на сервер
+                } else {
+                    // Ошибка заполнения формы
+                    messageElement.style.color = 'red';
+                    messageElement.textContent = errorMessage;
+                }
+            });
+            document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+            // Очищаем значения полей формы
+            document.getElementById("myForm").reset();
+            });
+    </script>
 </body>
 </html>
