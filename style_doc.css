@@ -1,17 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nokora&family=Unna&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nokora&family=Unna&display=swap');
 
 body{
     background-color: #F2F2ED;
     margin: 0;
 
-}
 
-.slii{
-    width: 98.9vw;
-    height: 33vw; /* 70% of the viewport height */
-    flex-shrink: 0;
-    margin-top: 34%;
 }
 
 .header{
@@ -32,18 +26,19 @@ body{
     position: fixed;
     z-index: 1000;
     margin-top: -4%;
-
     
 }
 
-h1{
+h{
     color: #000;
     font-family: Playfair Display SC;
-    font-size: 1.3vw; /* 2% of the viewport width */
+    font-size: 3vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    position: relative;
+    z-index: 100;
 }
 
 h20{
@@ -58,58 +53,51 @@ h20{
     z-index: 100;
 }
 
-h4{
-    width: 480px;
-    height: 81px;
-    flex-shrink: 0;
+p2{
+    font-family: 'Abril Fatface', serif;
+    font-style: normal;
+    font-size: 1.2vw;
+    color: rgba(0, 0, 0, 0.37);
+    position: relative;
+    top:1.5vw;
+}
+
+p3{
+    font-family: 'Nokora', sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
     color: #000;
-    text-align: center;
+    position: relative;
+    top:5vw;
+}
+
+h1{
+    color: #000;
     font-family: Playfair Display SC;
-    font-size: 2vw;
+    font-size: 1.3vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    position: relative;
+    z-index: 100;
 }
 
 
-.friday button,
-.mondey button,
-.sreda button,
-.chetverg button,
-.subb button,
-.vosk button{
-    display:none;
-    z-index:10;
-    background-color: rgba(0, 0, 0, 0.7); /* Черный с легкой прозрачностью */
-    color: white; /* Белый текст */
-    border: 1px solid white; /* Белая обводка */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.friday:hover button,
-.mondey:hover button,
-.sreda:hover button,
-.chetverg:hover button,
-.subb:hover button,
-.vosk:hover button{
-    display:block;
-}
-
-
+.hidden {
+    display: none;
+  }
 
 h2{
-    color: white;
+    color: #000;
     font-family: Playfair Display SC;
-    font-size: 1.5vw; /* 2% of the viewport width */
+    font-size: 2vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    position: relative;
+    top:3vw;
 }
 
 p{
@@ -122,28 +110,6 @@ p{
     text-transform: uppercase;
 }
 
-p1{
-    color: #000;
-    font-family: 'Unna', sans-serif;
-    font-size: 7vw; /* 2% of the viewport width */
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-p2{
-    color: #000;
-    font-family: Playfair Display SC;
-    font-size: 3vw; /* 2% of the viewport width */
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    position: relative;
-    bottom: 20%;
-}
-
 h3{
     color: #000;
     font-family: Nokora;
@@ -154,96 +120,70 @@ h3{
     text-transform: uppercase;
 }
 
-.bood{
-    justify-self: left;
-    width: 79.9vw;
-    height: 23vw; /* 30% of the viewport height */
-    flex-shrink: 0;
-    border: 1px solid #000;
-}
-.cl{
-    width: 18.98vw;
-    height: 23vw; /* 30% of the viewport height */
-    flex-shrink: 0;
-    border: 1px solid #000;
-    justify-content: center;
-    display: flex;
-}
+
 .telo{
     display: flex;
     margin-top: 3.5vw;
     width: 100%;
-    height: 35vw;
-    background-color: #F0D92A;
-    overflow: hidden; /* обрезать лишнюю часть изображения */
+    height: 7vw;
+    background-color: #F2F2ED;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
 }
 
-.calendar{
-    justify-content: left;
-    align-self: center;
+
+
+.telo2{
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    height: 15vw;
+    background-color: #F2F2ED;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
 }
 
+.telo3{
+    display: flex;
+    width: 100%;
+    height: 10vw;
+    background-color: #F2F2ED;
+}
+
+.tel,
+.vk,
+.yut{
+    width: 32.97vw;
+    height: 10vw; /* 50% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #F2F2ED;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.telo4{
+    display: flex;
+    width: 100%;
+    height: 15vw;
+    background-color: #F2F2ED;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
 
 
 
 
 .podsob{
-    width: 98.9vw;
-    height: 35vw; /* 50% of the viewport height */
+    width: 100%;
     flex-shrink: 0;
-    border: 1px solid #000;
     background: #F2F2ED;
     display: flex;
     justify-content: space-around;
     
-}
-
-a{
-    text-decoration: none;
-}
-
-a:hover h2{
-    color: orange;
-}
-
-.calen_weeks{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-
-.mondey,
-.thetheday,
-.sreda,
-.chetverg,
-.friday,
-.subb,
-.vosk{
-    width: 14.28%;
-    height: 13vw;
-    border: 1px solid #000;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-}
-
-.mondey img,
-.thetheday img,
-.sreda img,
-.chetverg img,
-.friday img,
-.subb img,
-.vosk img{
-    position: relative;
-    width: 100%;
-    z-index:1;
-    bottom: 9vw;
 }
 
 .nav-link{
@@ -254,25 +194,25 @@ a:hover h2{
     color: #F0D92A;
 }
 
-.logo {
+.logo{
     display: flex;
     align-items: center;
-    width: 30%; /* Ширина занимает всю доступную ширину */
-    height: 150%;
+    width: 360px;
+    height: 73px;
     color: #000;
     line-height: normal;
     text-transform: uppercase;
-    justify-content: center; /* Логотип будет выравниваться по центру */
-    margin-bottom: 1.5vw;
-  }
+    justify-content: center; /* Логотип будет выравниваться слева */
+    margin-bottom: 1.5vw
+}
 
-  .navbar-brand img {
+.navbar-brand img {
     position: relative;
-    max-width: 13vw; /* Максимальная ширина логотипа */
-    top: 0.2vw;
-    flex-shrink: 0;
-    
-  }
+    width: 13vw; /* Логотип будет уменьшаться при уменьшении родительского элемента */
+    position: relative;
+    top:0.7vw;
+}
+
 
 .arrow-button{
     background-color: white; /* задаем белый цвет */
@@ -312,7 +252,6 @@ a:hover h2{
     width: 100%; /* 100% of the parent container's width */
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
   }
   
   .navbar-nav {
@@ -345,16 +284,27 @@ a:hover h2{
 }
 
 .sob{
-    width: 100%;
-    height: 3vw; /* 50% of the viewport height */
-    background: #000;
+    width: 98.9vw;
+    height: 5vw; /* 50% of the viewport height */
+    border: 1px solid #000;
+    background: #F2F2ED;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+.page{
+    width: 98.9vw;
+    height: 5vw; /* 50% of the viewport height */
+    border: 1px solid #000;
+    background: #F2F2ED;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer_up{
-    width: 100%;
+    width: 98.9vw;
     height: 5vw; /* 50% of the viewport height */
     border: 1px solid #000;
     background: #F2F2ED;
@@ -364,7 +314,7 @@ a:hover h2{
 }
 
 .footer_down{
-    width: 100%;
+    width: 98.9vw;
     height: 7.4vw; /* 50% of the viewport height */
     border: 1px solid #000;
     background: #F2F2ED;
@@ -398,6 +348,8 @@ a:hover h2{
     width: 7vw;
     display: flex;
     justify-content: space-around;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
 }
 
 h7{
@@ -439,6 +391,30 @@ h8{
     margin-left: 3%;
 }
 
+.vetka{
+    
+    display: flex;
+    height: 5vw;
+    background-color: #F2F2ED;
+    border: 1px solid #000;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.vetka2{
+    display: flex;
+    height: 5vw;
+    background-color: #F2F2ED;
+    border: 1px solid #000;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .ticet{
     margin-bottom: 12%;
     width: 15%;
@@ -448,6 +424,9 @@ h8{
 }
 
 
+.carousel-indicators{
+    margin-bottom: 6%;
+}
 
 .linkk{
     text-decoration: none;
@@ -464,7 +443,10 @@ h8{
     align-items: center;
     display:flex;
     flex-direction: column;
-    border: 1px solid #000 ;
+    border: 1px solid #000;
+    width: 32.97vw;
+    height: 32.97vw;
+    text-align: center;
 }
 
 
@@ -488,7 +470,6 @@ h8{
 
 h12{
     color: #000;
-
     font-size: 1.3vw; /* 2% of the viewport width */
     font-style: normal;
     font-weight: 400;
@@ -505,17 +486,25 @@ h12{
     justify-content: center;
     border-radius: 40% 40% 0 0;
     background-color: #F2F2ED;
+    position: relative;
+    top:2.7vw;
 }
-
-.text{
-    color: #000;
-}
-
-
-
 
 /* Модальный (фон) */
-.modal-content1 {
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  }
+  
+  /* Модальное содержание/коробка */
+  .modal-content {
     background-color: #F2F2ED;
     margin: auto; /* 15% сверху и по центру */
     border: 1px solid #888;
@@ -524,7 +513,7 @@ h12{
   }
   
   /* Кнопка закрытия */
-  .close1 {
+  .close {
     display: flex;
     width: 20%;
     height: 8vw;
@@ -537,69 +526,9 @@ h12{
 
   }
   
-  
-  .close1:hover,
-  .close1:focus {
-    color: black;
+  .close:hover,
+  .close:focus {
+    color: #F0D92A;
     text-decoration: none;
     cursor: pointer;
   }
-  
-
-  @media (max-width: 992px) {
-    .vetv2 {
-      margin-left: 70%; /* Показываем по семь элементов в ширину */
-    }
-}
-
-@media (min-width: 768px) {
-    .calen_weeks {
-      width: 200%; /* Показываем по семь элементов в ширину */
-    }
-}
-
-  
-@media (max-width: 768px) {
-    .calen_weeks {
-        flex-wrap:wrap; /* Показываем по три элемента в ширину */
-    }
-
-    .mondey,
-    .thetheday,
-    .sreda,
-    .chetverg,
-    .friday,
-    .subb,
-    .vosk {
-        width: 33.33%;
-        height: 15vh;
-        border: 1px solid #000;
-        overflow: hidden;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-      .mondey img,
-    .thetheday img,
-    .sreda img,
-    .chetverg img,
-    .friday img,
-    .subb img,
-    .vosk img {
-      bottom: 50px;
-      width: 40vw; /* фиксированное смещение для мобильных устройств */
-    }
-  
-    .friday button,
-    .mondey button,
-    .sreda button,
-    .chetverg button,
-    .subb button,
-    .vosk button {
-      font-size: 1vw; /* фиксированный размер шрифта для мобильных устройств */
-      padding: 10px 5px; /* фиксированный отступ для мобильных устройств */
-      bottom: 25px;
-      white-space:now-rap;
-       /* фиксированное смещение для мобильных устройств */
-    }
-}
