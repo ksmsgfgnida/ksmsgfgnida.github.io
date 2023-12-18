@@ -235,24 +235,25 @@ h3{
     color: #F0D92A;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
-    width: 360px;
-    height: 73px;
+    width: 30%; /* Ширина занимает всю доступную ширину */
+    height: 150%;
     color: #000;
     line-height: normal;
     text-transform: uppercase;
-    justify-content: center; /* Логотип будет выравниваться слева */
+    justify-content: center; /* Логотип будет выравниваться по центру */
     margin-bottom: 1.5vw;
-}
+  }
 
 .navbar-brand img {
     position: relative;
-    width: 13vw; /* Логотип будет уменьшаться при уменьшении родительского элемента */
-    position: relative;
-    top:0.7vw;
-}
+    max-width: 13vw; /* Максимальная ширина логотипа */
+    top: 0.2vw;
+    flex-shrink: 0;
+
+  }
 
 
 .arrow-button{
@@ -293,7 +294,7 @@ h3{
     width: 100%; /* 100% of the parent container's width */
     display: flex;
     justify-content: space-between;
-    top: 0;
+    flex-wrap: nowrap;
   }
   
   .navbar-nav {
@@ -449,13 +450,6 @@ h8{
     margin-left: 3%;
 }
 
-.ticet{
-    margin-bottom: 12%;
-    width: 15%;
-    height: 4vw;
-    margin-left: 80%;
-    background-color: #F0D92A;
-}
 
 
 .carousel-indicators{
@@ -588,3 +582,11 @@ h12{
     text-decoration: none;
     cursor: pointer;
   }
+
+
+
+  @media (max-width: 992px) {
+    .vetv2 {
+      margin-left: 70%; /* Показываем по семь элементов в ширину */
+    }
+}

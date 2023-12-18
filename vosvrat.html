@@ -10,7 +10,7 @@
 <body>
     <div class="header">
         <div class="logo">
-            <a class="navbar-brand" href="index.html"><img src="log.png" alt=""></a></div>
+            <a class="navbar-brand" href="index.html"><img src="img/log.png" alt=""></a></div>
         <div class="vetv1"></div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -211,16 +211,16 @@
                     for (let j = 1; j <= 34; j++) {
                         seatNumberSelect.innerHTML += `<option value="${j}">Место ${j}</option>`;
                     }
-                    seatNumberSelect.innerHTML += '<option value="A">Seat A</option>';
-                    seatNumberSelect.innerHTML += '<option value="B">Seat B</option>';
-                    seatNumberSelect.innerHTML += '<option value="C">Seat C</option>';
-                    seatNumberSelect.innerHTML += '<option value="D">Seat D</option>';
+                    seatNumberSelect.innerHTML += '<option value="A">Место A</option>';
+                    seatNumberSelect.innerHTML += '<option value="B">Место B</option>';
+                    seatNumberSelect.innerHTML += '<option value="C">Место C</option>';
+                    seatNumberSelect.innerHTML += '<option value="D">Место D</option>';
                 } else if (location === 'balcony') {
                     for (let i = 1; i <= 7; i++) {
-                        seatRowSelect.innerHTML += `<option value="${i}">Row ${i}</option>`;
+                        seatRowSelect.innerHTML += `<option value="${i}">Ряд ${i}</option>`;
                     }
                     for (let j = 1; j <= 28; j++) {
-                        seatNumberSelect.innerHTML += `<option value="${j}">Seat ${j}</option>`;
+                        seatNumberSelect.innerHTML += `<option value="${j}">Место ${j}</option>`;
                     }
                 }
             }
@@ -270,7 +270,7 @@
                 if (isValid) {
                     // Отправка формы
                     messageElement.style.color = 'green';
-                    messageElement.textContent = 'Form submitted successfully.';
+                    messageElement.textContent = 'Ваш запрос на возврат оформлен';
                     // Добавьте здесь логику для отправки данных формы на сервер
                 } else {
                     // Ошибка заполнения формы

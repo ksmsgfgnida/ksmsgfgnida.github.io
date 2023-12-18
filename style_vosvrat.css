@@ -145,21 +145,6 @@ h3{
     overflow: hidden; /* обрезать лишнюю часть изображения */
 }
 
-.telo img{
-    width: 100%;
-    height: 150%; /* автоматически подстраивать высоту изображения */
-    position: relative;
-    top:-20%;
-    z-index: 1;
-}
-
-
-.telo2{
-    justify-content: left;
-    align-self: center;
-    display: flex;
-}
-
 
 
 
@@ -583,3 +568,24 @@ input[type="submit"]:hover {
     padding: 20px; /* Значение padding */
     background-color: #E1E1DD; /* Цвет фона */
   }
+
+
+  @media (max-width: 768px) {
+    .telo{
+        height: 280vw;
+    }
+    
+    #myForm {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: auto;
+    }
+}
